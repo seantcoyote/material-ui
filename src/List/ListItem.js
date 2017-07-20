@@ -717,8 +717,8 @@ class ListItem extends Component {
       // Create a nested list indicator icon if we don't have an icon on the right
       if (needsNestedIndicator) {
         rightIconButtonElement = this.state.open ?
-          <IconButton style={{top: '-5'}}> <OpenIcon color={toggleColor} /></IconButton> :
-          <IconButton style={{top: '-5'}}> <CloseIcon color={toggleColor} /></IconButton>;
+          <IconButton style={{top: '-5px'}}> <OpenIcon color={toggleColor} /></IconButton> :
+          <IconButton style={{top: '-5px'}}> <CloseIcon color={toggleColor} /></IconButton>;
         rightIconButtonHandlers.onTouchTap = this.handleNestedListToggle;
       }
 
